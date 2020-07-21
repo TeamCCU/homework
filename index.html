@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <style>
+        body {
+            background-color: #F9FAFC;
+            text-align: center;
+        }
+
+        .Screen {
+            align-items: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container>div {
+            margin: 15px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+        }
+
+        .Card {
+            border-radius: 3px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            width: 400px;
+            box-sizing: initial;
+            transition: 0.3s;
+        }
+
+        /* .Card:hover {
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        } */
+        .Container {
+            padding: 25px 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            width: 300px;
+            background: #FAFBFC;
+            border: 2px solid #DFE1E6;
+            height: 26px;
+            /* cursor: pointer; */
+            /* -webkit-border-radius: 5px; */
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            padding: 7px;
+            transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
+        }
+
+        .button1{
+            border-radius: 3px;
+            border: none;
+            background-color: #5AAC44;
+            cursor: pointer;
+            width: 306px;
+            height: 40px;
+            box-sizing: initial;
+            /* margin-bottom: 10px; */
+            /* transition: 0.3s; */
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .button1:hover {
+            background-color: #71c05c;
+        }
+
+        .text1{
+            color: #5E6C84;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .SmallCard {
+            border-radius: 3px;
+            border: #000;
+            background-color: #ffffff;
+            width: 318px;
+            height: 40px;
+            box-sizing: initial;
+            box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container Screen">
+        <h2>
+            圖片
+        </h2>
+        <div class="Card">
+            <div class="Container">
+                <h4 style="text-align:center; color: #5E6C84;"> 登入 Trello</h4>
+                <input type="text" placeholder=" 輸入電子郵件">
+                <input type="text" placeholder=" 輸入密碼">
+                <button type="button" class="button1">登入</button>
+                <text class="text1"> 或者</text>
+                <div class="SmallCard">繼續使用Google帳號登入</div>
+                <div class="SmallCard">繼續使用Microsoft帳號登入</div>
+                <div class="SmallCard">繼續使用Apple帳號登入</div>
+            </div>
+        </div>
+        <p>This is a paragraph.</p>
+    </div>
+
+</body>
+
+</html>
