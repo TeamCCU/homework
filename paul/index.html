@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
+    <link rel="icon" href="https://trello.com/favicon.ico" type="image/x-icon" /> 
+    <title>登入 Trello</title>
     <style>
         body {
             background-color: #F9FAFC;
@@ -66,14 +67,14 @@
             margin-bottom: 10px;
             font-size: 14px;
             padding: 7px;
-            outline:none;
+            outline: none;
             transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
         }
 
-        input:hover{
-            border-color :#80b3ff;
+        input:hover {
+            border-color: #80b3ff;
             background-color: #ffffff;
-            outline:none;
+            outline: none;
         }
 
         .button1 {
@@ -82,7 +83,7 @@
             background-color: #5AAC44;
             cursor: pointer;
             width: 318px;
-            height: 40px;
+            height: 37px;
             box-sizing: initial;
             padding: 0px;
             /* margin-bottom: 10px; */
@@ -91,12 +92,12 @@
             font-size: 14px;
             font-weight: bold;
             transition: 0.3s;
-            outline:none;
+            outline: none;
         }
 
         .button1:hover {
             background-color: #71c05c;
-            outline:none;
+            outline: none;
         }
 
         .text1 {
@@ -114,11 +115,11 @@
             height: 40px;
             box-sizing: initial;
             box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             cursor: pointer;
             transition: 0.3s;
             font-size: 14px;
-            outline:none;
+            outline: none;
             /* justify-content: center;
             text-align: center;  */
         }
@@ -178,7 +179,13 @@
             font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         }
 
-
+        .text4 {
+            text-decoration: none;
+            color: #5E6C84;
+            font-size: 14px;
+            font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            margin: 10px;
+        }
 
         .textbox {
             text-align: center;
@@ -202,6 +209,28 @@
             display: inline-block;
             /* list-style-type:disc;
             list-style:disc; */
+        }
+
+        .footer-logo {
+            width: 150px;
+            vertical-align: top;
+            margin: 20px;
+            margin-top: 1px;
+        }
+
+        .LanguageBox {
+            width: auto;
+            background: #FAFBFC;
+            border: 2px solid #DFE1E6;
+            color: #8e8f92;
+            height: 40px;
+            /* cursor: pointer; */
+            /* -webkit-border-radius: 5px; */
+            border-radius: 3px;
+            margin-top: 80px;
+            font-size: 14px;
+            padding: 7px;
+            outline: none;
         }
     </style>
 </head>
@@ -245,9 +274,60 @@
             </div>
         </div>
         <a class="text3" href="/signup">隱私政策 &nbsp∙ &nbsp服務條款</a>
-
+        <div>
+            <form>
+                <select class="LanguageBox" name="Language">
+                    <option value="cs" data-url="https://trello.com/cs/login">Čeština</option>
+                    <option value="de" data-url="https://trello.com/de/login">Deutsch</option>
+                    <option value="en" data-url="https://trello.com/en/login">English</option>
+                    <option value="en-AU" data-url="https://trello.com/en-AU/login">English (AU)</option>
+                    <option value="en-GB" data-url="https://trello.com/en-GB/login">English (UK)</option>
+                    <option value="en-US" data-url="https://trello.com/en-US/login">English (US)</option>
+                    <option value="es" data-url="https://trello.com/es/login">Español</option>
+                    <option value="fr" data-url="https://trello.com/fr/login">Français</option>
+                    <option value="it" data-url="https://trello.com/it/login">Italiano</option>
+                    <option value="hu" data-url="https://trello.com/hu/login">Magyar</option>
+                    <option value="nl" data-url="https://trello.com/nl/login">Nederlands</option>
+                    <option value="nb" data-url="https://trello.com/nb/login">Norsk (bokmål)</option>
+                    <option value="pl" data-url="https://trello.com/pl/login">Polski</option>
+                    <option value="pt-BR" data-url="https://trello.com/pt-BR/login">Português (Brasil)</option>
+                    <option value="fi" data-url="https://trello.com/fi/login">Suomi</option>
+                    <option value="sv" data-url="https://trello.com/sv/login">Svenska</option>
+                    <option value="vi" data-url="https://trello.com/vi/login">Tiếng Việt</option>
+                    <option value="tr" data-url="https://trello.com/tr/login">Türkçe</option>
+                    <option value="ru" data-url="https://trello.com/ru/login">Русский</option>
+                    <option value="uk" data-url="https://trello.com/uk/login">Українська</option>
+                    <option value="th" data-url="https://trello.com/th/login">ภาษาไทย</option>
+                    <option value="zh-Hans" data-url="https://trello.com/zh-Hans/login">中文 (简体)</option>
+                    <option value="zh-Hant" data-url="https://trello.com/zh-Hant/login">中文 (繁體)</option>
+                    <option value="ja" data-url="https://trello.com/ja/login">日本語</option>
+                </select>
+            </form>
+        </div>
+        <hr style="border: 0.3px solid (0,0%,80%); width: 380px; margin:25px;" />
     </div>
+    
 
 </body>
+
+<footer>
+    <div>
+        <img class="footer-logo"
+            src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/16006ae28f149063408d601e8c80eddc/atlassian-logo-blue-small.svg" />
+    </div>
+    <span>
+        <a class="text4" href="/signup"> 範本 </a>
+        <a class="text4" href="/signup"> 價格 </a>
+        <a class="text4" href="/signup"> Apps </a>
+        <a class="text4" href="/signup"> 工作機會 </a>
+        <a class="text4" href="/signup"> 部落格 </a>
+        <a class="text4" href="/signup"> 開發者 </a>
+        <a class="text4" href="/signup"> 關於 </a>
+        <a class="text4" href="/signup"> 求助 </a>
+        <a class="text4" href="/signup"> Cookie設定 </a>
+    </span>
+</footer>
+
+
 
 </html>
