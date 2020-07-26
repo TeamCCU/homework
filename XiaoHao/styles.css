@@ -1,0 +1,729 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* referencing Paul from body to flex-container */
+
+body {
+    background-color: #F9FAFC;
+    text-align: center;
+}
+
+.screen {
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container>div {
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+.trello-main-logo {
+	height: 43px;
+	width: 139.9px;
+	border: 0px none rgb(77, 77, 77);
+	border-top: 0px none rgb(77, 77, 77);
+	border-right: 0px none rgb(77, 77, 77);
+	border-bottom: 0px none rgb(77, 77, 77);
+	border-left: 0px none rgb(77, 77, 77);
+	margin: 40px 689.65px;
+	padding: 0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;	
+}
+
+.account-form {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-decoration: none solid rgb(77, 77, 77);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(255, 255, 255);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(77, 77, 77);
+
+	/* Box */
+	height: 540.6px;
+	width: 320px;
+	
+	margin: 0px;
+	padding: 25px 40px;
+	max-height: none;
+	min-height: 0px;
+	max-width: 585px;
+	min-width: 0px;
+
+	/* Positioning */
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	box-sizing: content-box;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+h1 {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	letter-spacing: -0.16px;
+	line-height: 28px;
+	text-decoration: none solid rgb(94, 108, 132);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(94, 108, 132);
+
+	/* Box */
+	height: 28px;
+	width: 320px;
+	border: 0px none rgb(94, 108, 132);
+	border-top: 0px none rgb(94, 108, 132);
+	border-right: 0px none rgb(94, 108, 132);
+	border-bottom: 0px none rgb(94, 108, 132);
+	border-left: 0px none rgb(94, 108, 132);
+	margin: 10px 0px 25px;
+	padding: 0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+}
+
+input {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: normal;
+	text-decoration: none solid rgb(77, 77, 77);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(250, 251, 252);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(77, 77, 77);
+
+	/* Box */
+	height: 44px;
+	width: 320px;
+	border: 2px solid rgb(223, 225, 230);
+	border-top: 2px solid rgb(223, 225, 230);
+	border-right: 2px solid rgb(223, 225, 230);
+	border-bottom: 2px solid rgb(223, 225, 230);
+	border-left: 2px solid rgb(223, 225, 230);
+	margin: 0px 0px 16.8px;
+	padding: 7px;
+	max-height: none;
+	min-height: 0px;
+	max-width: 400px;
+	min-width: 0px;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: text;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: break-word;
+	box-shadow: none;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.button {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	letter-spacing: normal;
+	line-height: normal;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: pre;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(97, 189, 79);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(255, 255, 255);
+
+	/* Box */
+	height: 36px;
+	width: 320px;
+	border: 0px none rgb(255, 255, 255);
+	border-top: 0px none rgb(255, 255, 255);
+	border-right: 0px none rgb(255, 255, 255);
+	border-bottom: 0px none rgb(255, 255, 255);
+	border-left: 0px none rgb(255, 255, 255);
+	margin: 0px;
+	padding: 8.4px 18.2px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0s ease 0s;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: break-word;
+	box-shadow: none;
+	border-top-left-radius: 4.2px;
+	border-top-right-radius: 4.2px;
+	border-bottom-left-radius: 4.2px;
+	border-bottom-right-radius: 4.2px;
+}
+
+#google-icon {
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/8215f6659adc202403198fef903a447e/sign-in-with-google.svg");
+	background-position: 0px 50%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.54);
+
+	/* Box */
+	height: 18px;
+	width: 18px;	
+
+	/* Positioning */
+	vertical-align: middle;
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+}
+
+#micro-icon {
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/72ece804e5285ab6507e2406157cda3c/microsoft-logo.svg");
+	background-position: 0px 50%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.54);
+
+	/* Box */
+	height: 18px;
+	width: 18px;	
+
+	/* Positioning */
+	vertical-align: middle;
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+}
+
+#apple-icon {
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/6fc4ecf05a97cfb43cfcbb14738a5aa0/apple-logo-black.svg");
+	background-position: 0px 50%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.54);
+
+	/* Box */
+	height: 18px;
+	width: 18px;	
+
+	/* Positioning */
+	vertical-align: middle;
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+}
+
+.label {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	letter-spacing: normal;
+	line-height: 32px;
+	text-decoration: none solid rgb(80, 95, 121);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: middle;
+	white-space: normal;
+	word-spacing: 0px;
+}
+
+.list-button {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-decoration: none solid rgba(0, 0, 0, 0.54);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgba(0, 0, 0, 0.54);
+
+	/* Box */
+	height: 39px;
+	width: 316.8px;
+	border: 0px none rgba(0, 0, 0, 0);
+	border-top: 0px none rgba(0, 0, 0, 0);
+	border-right: 0px none rgba(0, 0, 0, 0);
+	border-bottom: 0px none rgba(0, 0, 0, 0);
+	border-left: 0px none rgba(0, 0, 0, 0);
+	margin: 0px 0px 12px;
+	p...0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+	outline-offset: 0px;
+	box-sizing: content-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: break-word;
+	box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.textstyle {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 18.662px;
+	text-decoration: none;
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(0, 82, 204);
+}
+
+.bottom-form-link {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-decoration: none solid rgb(77, 77, 77);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Box */
+	height: 28.8px;
+	width: 320px;
+	margin: 14px 0px;	
+}
+
+.smaller-links {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-decoration: none solid rgb(77, 77, 77);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(77, 77, 77);
+
+	/* Box */
+	height: 20px;
+	width: 400px;
+	border: 0px none rgb(77, 77, 77);
+	border-top: 0px none rgb(77, 77, 77);
+	border-right: 0px none rgb(77, 77, 77);
+	border-bottom: 0px none rgb(77, 77, 77);
+	border-left: 0px none rgb(77, 77, 77);
+	margin: 12px 0px;
+	padding: 0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+}
+
+.small-text{
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-decoration: none;
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	color: rgb(0, 82, 204);
+}
+
+.global-footer {
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(77, 77, 77);
+
+	/* Box */
+	height: 173.413px;
+	width: 1491.2px;
+	border: 0px none rgb(77, 77, 77);
+	border-top: 0px none rgb(77, 77, 77);
+	border-right: 0px none rgb(77, 77, 77);
+	border-bottom: 0px none rgb(77, 77, 77);
+	border-left: 0px none rgb(77, 77, 77);
+	margin: 10px 14px 24px;
+	padding: 0px;
+	max-height: none;
+	min-height: auto;
+	max-width: none;
+	min-width: auto;
+
+	/* Positioning */
+	position: relative;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+}
+
+#language-picker {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 20px;
+	text-decoration: none solid rgb(94, 108, 132);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: pre;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(94, 108, 132);
+
+	/* Box */
+	height: 38px;
+	width: 119.6px;
+	border: 2px solid rgb(237, 239, 240);
+	border-top: 2px solid rgb(237, 239, 240);
+	border-right: 2px solid rgb(237, 239, 240);
+	border-bottom: 2px solid rgb(237, 239, 240);
+	border-left: 2px solid rgb(237, 239, 240);
+	margin: 0px;
+	padding: 7px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Effects */
+	transform: none;
+	transition: all 0s ease 0s;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+}
+
+.atlassian-logo-small {
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(77, 77, 77);
+
+	/* Box */
+	height: 18.6125px;
+	width: 150px;
+	border: 0px none rgb(77, 77, 77);
+	border-top: 0px none rgb(77, 77, 77);
+	border-right: 0px none rgb(77, 77, 77);
+	border-bottom: 0px none rgb(77, 77, 77);
+	border-left: 0px none rgb(77, 77, 77);
+	margin: 1px 0px 20px;
+	padding: 0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+}
+
+li {
+        display: inline-block;
+}
+
+.global-footer-list-item-link {
+	/* Font & Text */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 20px;
+	text-decoration: none;
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(94, 108, 132);
+
+	/* Box */
+	height: auto;
+	width: auto;
+	border: 0px none rgb(94, 108, 132);
+	border-top: 0px none rgb(94, 108, 132);
+	border-right: 0px none rgb(94, 108, 132);
+	border-bottom: 0px none rgb(94, 108, 132);
+	border-left: 0px none rgb(94, 108, 132);
+	margin: 0px;
+	padding: 0px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+}
