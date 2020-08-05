@@ -9,6 +9,7 @@
 body {
     background-color: #F9FAFC;
     text-align: center;
+height: 100%;
 }
 
 .screen {
@@ -18,14 +19,13 @@ body {
 .flex-container {
     display: flex;
     flex-direction: column;
-}
-
-.flex-container>div {
-    margin: 15px;
+    min-height: 79%;
     text-align: center;
     line-height: 50px;
     font-size: 18px;
 }
+
+
 .trello-main-logo {
 	height: 43px;
 	width: 139.9px;
@@ -203,14 +203,12 @@ li {
     	max-width: 30%;
 }
 
-footer {
+.footer {
 	margin-bottom: 24px;
     	font-size: 14px;
     	line-height: 20px;
     	margin-top: 10px;
-    	font-size: .8em;
-    	margin: 20em 1em;
-    	text-align: center;
+	margin: 4em 1em;
 }
 
 .hr1 {
