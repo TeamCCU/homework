@@ -6,27 +6,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MainLogo = function (_React$Component) {
-  _inherits(MainLogo, _React$Component);
+// import React from 'react';
+import Trello_Main_Logo from './Trello_Main_Logo.jsx';
+import Card from './Card.jsx';
 
-  function MainLogo() {
-    _classCallCheck(this, MainLogo);
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
 
-    return _possibleConstructorReturn(this, (MainLogo.__proto__ || Object.getPrototypeOf(MainLogo)).apply(this, arguments));
-  }
+    function App() {
+        _classCallCheck(this, App);
 
-  _createClass(MainLogo, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement('img', {
-        className: 'trello-main-logo',
-        alt: 'Trello',
-        src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg'
-      });
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
     }
-  }]);
 
-  return MainLogo;
+    _createClass(App, [{
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                null,
+                React.createElement(Trello_Main_Logo, null),
+                React.createElement(Card, null)
+            );
+        }
+    }]);
+
+    return App;
 }(React.Component);
 
-ReactDOM.render(React.createElement(MainLogo), document.getElementById('trello-main-logo'));
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));

@@ -6,29 +6,25 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// var element = React.createElement("img", { src: "https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg",
-//     alt: "trello-main-logo" });
+var Card = function (_React$Component) {
+    _inherits(Card, _React$Component);
 
-// ReactDOM.render(element, document.getElementById('root'));
-var Hello = function (_React$Component) {
-  _inherits(Hello, _React$Component);
+    function Card() {
+        _classCallCheck(this, Card);
 
-  function Hello() {
-    _classCallCheck(this, Hello);
-
-    return _possibleConstructorReturn(this, (Hello.__proto__ || Object.getPrototypeOf(Hello)).apply(this, arguments));
-  }
-
-  _createClass(Hello, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement('div', null, 'Hello ' + this.props.toWhat);
+        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
     }
-  }]);
 
-  return Hello;
+    _createClass(Card, [{
+        key: "render",
+        value: function render() {
+            return React.createElement("div", { "class": "Card" });
+        }
+    }]);
+
+    return Card;
 }(React.Component);
+// export default Card;
 
-;
 
-ReactDOM.render(React.createElement(Hello, { toWhat: 'World' }, null), document.getElementById('root'));
+export default Card;

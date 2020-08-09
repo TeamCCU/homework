@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>登入 Trello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://trello.com/favicon.ico" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <!-- We will put our React component inside this div. -->
+    <!-- <div id="Trello-Main-Container" ></div>  -->
+    <div id="root"></div>
+
+    <!-- <div id='like_button_container'></div> -->
+
+
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <script type="text/babel">
+
+        //Components -------------------------------------
+        class Card extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return <div className="Card"></div>;
+            }
+        }
+
+        class Trello_Main_Logo extends React.Component {
+            render() {
+                return <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg"
+                    className="trello-main-logo"
+                    alt="trello-main-logo" />;
+            }
+        }
+
+        class Login_Text extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                const { contentText } = this.props;
+                return <text className="Login_Text">{contentText}</text>;
+            }
+        }
+
+        class InputText extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            render() {
+                const { placeholder } = this.props;
+                return <input className="Input" type="text" />
+            }
+        }
+
+        class LoginButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { Clicked: false };
+            }
+
+            render() {
+                if (this.state.Clicked) {
+                    return <a herf="#" />;
+                }
+
+                return (
+                    <button className="button1" onClick={() => this.setState({ Clicked: true })}>
+                        登入
+                    </button>
+                );
+            }
+        }
+
+        class LinkAcButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { Clicked: false };
+            }
+
+            render() {
+                const {ButtonText} = this.props;
+
+                if (this.state.Clicked) {
+                    return <a herf="#" />;
+                }
+
+                return (
+                    <button className="SmallCard" onClick={() => this.setState({ Clicked: true })}>
+                        <span class="GoogleIcon"></span>
+                        <b style="color: #505f79;">{ButtonText}</b>
+                    </button>
+                );
+            }
+        }
+
+        //App ----------------------------------------------
+        class App extends React.Component {
+            constructor() {
+                super();
+                this.state = {};
+            }
+
+            render() {
+                return (
+                    <div className="flex-container Screen">
+                        <Trello_Main_Logo />
+                        <Card>
+                            <div className="Container">
+                                <Login_Text >登入 Trello</Login_Text>
+                                <InputText placeholder={"輸入電子郵件"} />
+                                <InputText placeholder={"輸入密碼"} />
+                                <LoginButton />
+                                <text className="text1"> 或者</text>
+                                <LinkAcButton ButtonText={"繼續使用Google帳號登入"}/>
+                                <LinkAcButton ButtonText={"繼續使用Microsoft帳號登入"}/>
+                                <LinkAcButton ButtonText={"繼續使用Apple帳號登入"}/>
+                                <a className="text2" href="/signup"> 以SSO登入 </a>
+                                <hr style="border: 0.3px solid (0,0%,80%);" />
+                                <ul className="textbox">
+                                    <li><a className="text2" href="/signup">無法登入？</a></li>
+                                    <li><a className="text2" href="/signup">∙&nbsp註冊帳號</a></li>
+                                </ul>
+                            </div>
+                        </Card>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+    <!-- Load our React component. -->
+
+
+</body>
+
+</html>

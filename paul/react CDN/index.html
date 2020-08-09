@@ -7,41 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="https://trello.com/favicon.ico" type="image/x-icon" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+
 
 </head>
 
 <body>
-
-  <!-- <img alt="Trello" class="trello-main-logo"
-    src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg"> -->
-
   <!-- We will put our React component inside this div. -->
-  <div id="trello-main-container"></div> 
+  <!-- <div id="Trello-Main-Container" ></div>  -->
+  <div id="root"></div>
+  
+  <!-- <div id='like_button_container'></div> -->
 
-  <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg" alt="trello-main-logo" />; -->
-  <!-- https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg
-  https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg -->
-  <!-- <div id="root"></div> -->
-  <!-- <div id="like_button_container"></div> -->
+
 
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script type="text/babel">
-    class Img extends React.Component {
+
+  <!-- <script type="text/babel">
+    class TMC extends React.Component {
       render() {
-        return <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg" alt = "trello-main-logo"/>
-        // React.createElement("img", src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg", alt = "trello-main-logo")
+        return <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg" class="trello-main-logo" alt = "trello-main-logo"/>
       }
     }
-    ReactDOM.render(<Img/>,document.getElementById('trello-main-container'))
-  </script>
+    ReactDOM.render(<TMC/>,document.getElementById('Trello-Main-Container'))
+  </script> -->
   <!-- Load our React component. -->
-  <!-- <script src="like_button.js"></script> -->
-  <!-- <script src="trello_main_logo.js"></script> -->
+
+  <script type="text/babel" src="./App.js"></script>
+  <!-- <script type="text/babel" src="./src/like_button.js"></script> -->
 </body>
 
-</html>
+</html> 

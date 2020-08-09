@@ -1,34 +1,36 @@
-// const element = <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg" alt="trello-main-logo" />;
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-// const domContainer = document.querySelector('#trello-main-container');
-// ReactDOM.render(
-//     element, domContainer,
-// );
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// class Img extends React.Component {
-//     render() {
-//         return <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg" alt="trello-main-logo" />;
-//     }
-// }
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-// ReactDOM.render(
-//     <h1>Hello, world!</h1>,
-//     document.getElementById('root')
-// );
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Trello_Main_Logo = function (_React$Component) {
+    _inherits(Trello_Main_Logo, _React$Component);
+
+    function Trello_Main_Logo() {
+        _classCallCheck(this, Trello_Main_Logo);
+
+        return _possibleConstructorReturn(this, (Trello_Main_Logo.__proto__ || Object.getPrototypeOf(Trello_Main_Logo)).apply(this, arguments));
+    }
+
+    _createClass(Trello_Main_Logo, [{
+        key: "render",
+        value: function render() {
+            return React.createElement("img", { src: "https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg",
+                "class": "trello-main-logo",
+                alt: "trello-main-logo" });
+        }
+    }]);
+
+    return Trello_Main_Logo;
+}(React.Component);
+
+// export default Trello_Main_Logo;
 
 
-// const element = (<div><h1>Hello, world!</h1></div>);
-// const Container = document.getElementById('root');
-// ReactDOM.render(
-//     element,
-//     Container
-// );
+// ReactDOM.render(<TMC />, document.getElementById('Trello-Main-Container'))
 
-type='text/babel';
-class Img extends React.Component {
-  render() {
-    return <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/76ceb1faa939ede03abacb6efacdde16/trello-logo-blue.svg" alt = "trello-main-logo"/>
-    // React.createElement("img", src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg", alt = "trello-main-logo")
-  }
-}
-ReactDOM.render(<Img/>,document.getElementById('trello-main-container'))
+
+export default Trello_Main_Logo;
