@@ -34,7 +34,7 @@ body {
     box-shadow: 0px 0px 8px 0px rgba(83, 83, 83, 0.2);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     width: 400px;
-    min-height: 500px;
+    /* min-height: 500px; */
     box-sizing: initial;
     /* transition: 0.3s; */
 }

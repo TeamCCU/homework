@@ -28,16 +28,35 @@
 
 
     <script type="text/babel">
-
+        // import React, { useState, useEffect } from "react";
         //Components -------------------------------------
         class Card extends React.Component {
-            constructor(props) {
-                super(props);
-            }
+            // constructor(props) {
+            //     super(props);
+            // }
             render() {
-                return <div className="Card"></div>;
+                return (
+                    <div className="Card">
+                        <div className="Container">
+                            <Login_Text />
+                            <InputText ContentText="請輸入電郵" />
+                            <InputText ContentText="請輸入密碼" />
+                            <LoginButton />
+                            <LinkAcButton Icon="GoogleIcon" ButtonText="繼續使用Google帳號登入" />
+                            <LinkAcButton Icon="MsIcon" ButtonText="繼續使用Microsoft帳號登入" />
+                            <LinkAcButton Icon="AppleIcon" ButtonText="繼續使用Apple帳號登入" />
+                            <a className="text2" href="/signup"> 以SSO登入 </a>
+                            <hr style={{ border: '0.3px solid (0,0%,80%)' }} />
+                            <ul className="textbox">
+                                <li><a className="text2" href="/signup">無法登入？</a></li>
+                                <li><a className="text2" href="/signup">∙&nbsp;註冊帳號</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                );
             }
         }
+
 
         class Trello_Main_Logo extends React.Component {
             render() {
@@ -48,25 +67,29 @@
         }
 
         class Login_Text extends React.Component {
-            constructor(props) {
-                super(props);
-            }
+
             render() {
-                const { contentText } = this.props;
-                return <text className="Login_Text">{contentText}</text>;
+                return <p className="Login_Text">登入 Trello</p>;
             }
         }
 
-        class InputText extends React.Component {
-            constructor(props) {
-                super(props);
-            }
+        function InputText(props) {
 
-            render() {
-                const { placeholder } = this.props;
-                return <input className="Input" type="text" />
-            }
+            return <input placeholder={props.ContentText} className="Input" type="text" />
+
         }
+
+        // class InputText extends React.Component {
+        //     constructor(props) {
+        //         super(props);
+        //         this.props.state = { contentText: "" }
+        //         // const contentText = "請輸入電郵";
+        //     }
+
+        //     render() {
+        //         return <input placeholder={this.state.contentText} className="Input" type="text" />
+        //     }
+        // }
 
         class LoginButton extends React.Component {
             constructor(props) {
@@ -76,7 +99,7 @@
 
             render() {
                 if (this.state.Clicked) {
-                    return <a herf="#" />;
+                    return <a href="/signup" />;
                 }
 
                 return (
@@ -87,27 +110,40 @@
             }
         }
 
-        class LinkAcButton extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = { Clicked: false };
+        function LinkAcButton(props) {
+
+            const Clicked = false;
+            if (Clicked === true) {
+                <a href="/signup" />;
             }
 
-            render() {
-                const {ButtonText} = this.props;
-
-                if (this.state.Clicked) {
-                    return <a herf="#" />;
-                }
-
-                return (
-                    <button className="SmallCard" onClick={() => this.setState({ Clicked: true })}>
-                        <span class="GoogleIcon"></span>
-                        <b style="color: #505f79;">{ButtonText}</b>
-                    </button>
-                );
-            }
+            return <button className="SmallCard" onClick={() => ({ Clicked: true })}>
+                <span className={props.Icon}></span>
+                <b style={{ color: '#505f79' }} >{props.ButtonText}</b>
+            </button>
         }
+
+        // class LinkAcButton extends React.Component {
+        //     constructor(props) {
+        //         super(props);
+        //         this.state = { Clicked: false };
+        //     }
+
+        //     render() {
+        //         const { ButtonText } = this.props;
+
+        //         if (this.state.Clicked) {
+        //             // return <a herf="#" />;
+        //         }
+
+        //         return (
+        //             <button className="SmallCard" onClick={() => this.setState({ Clicked: true })}>
+        //                 <span className="GoogleIcon"></span>
+        //                 <b style={"color: #505f79;"}>{ButtonText}</b>
+        //             </button>
+        //         );
+        //     }
+        // }
 
         //App ----------------------------------------------
         class App extends React.Component {
@@ -121,22 +157,7 @@
                     <div className="flex-container Screen">
                         <Trello_Main_Logo />
                         <Card>
-                            <div className="Container">
-                                <Login_Text >登入 Trello</Login_Text>
-                                <InputText placeholder={"輸入電子郵件"} />
-                                <InputText placeholder={"輸入密碼"} />
-                                <LoginButton />
-                                <text className="text1"> 或者</text>
-                                <LinkAcButton ButtonText={"繼續使用Google帳號登入"}/>
-                                <LinkAcButton ButtonText={"繼續使用Microsoft帳號登入"}/>
-                                <LinkAcButton ButtonText={"繼續使用Apple帳號登入"}/>
-                                <a className="text2" href="/signup"> 以SSO登入 </a>
-                                <hr style="border: 0.3px solid (0,0%,80%);" />
-                                <ul className="textbox">
-                                    <li><a className="text2" href="/signup">無法登入？</a></li>
-                                    <li><a className="text2" href="/signup">∙&nbsp註冊帳號</a></li>
-                                </ul>
-                            </div>
+
                         </Card>
                     </div>
                 );

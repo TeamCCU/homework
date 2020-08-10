@@ -1,12 +1,12 @@
 // import React from 'react';
-import Trello_Main_Logo from './Trello_Main_Logo.jsx';
-import Card from './Card.jsx';  
+import Trello_Main_Logo from '../Trello_Main_Logo.js';
+import Card from '../Card.js';  
 
 class App extends React.Component{
     render(){
         return(
-            <div>
-            <Trello_Main_Logo/>
+            <div className="flex-container Screen">
+            <Trello_Main_Logo></Trello_Main_Logo>
             <Card>
 
             </Card>

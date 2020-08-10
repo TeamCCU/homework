@@ -27,10 +27,6 @@ var Trello_Main_Logo = function (_React$Component) {
     return Trello_Main_Logo;
 }(React.Component);
 
-// export default Trello_Main_Logo;
-
+export default Trello_Main_Logo;
 
 // ReactDOM.render(<TMC />, document.getElementById('Trello-Main-Container'))
-
-
-export default Trello_Main_Logo;
